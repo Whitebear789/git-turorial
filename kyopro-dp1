@@ -1,0 +1,26 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int N, A[100], B[100];
+int dp[100];
+
+int main(){
+    cin >> N;
+    for(int i = 2; i <= N; i++) cin >> A[i];
+    for(int i = 3; i <= N; i++) cin >> B[i];
+
+    dp[1] = 0;
+    dp[2] = A[2];
+
+    /*
+    int temp1 = 0,temp2 = 0;
+    for(int i = 3; i <= N; i++){
+        temp1 = dp[i-1] + A[i];
+        temp2 = dp[i-2] + B[i];
+        if(temp1 >= temp2) dp[i] = tmep1;
+        else dp[i] = temp2;
+    }
+    cout << dp[N];
+    */
+}
